@@ -80,6 +80,8 @@ class App extends React.Component {
           name: this.state.inputName,
           link: this.state.inputLink,
         })
+        this.setState({ inputLink: '' })
+        this.setState({ inputName: '' })
         this.setState({ links: updatedList })
       })
       .catch(err => console.log(err))
